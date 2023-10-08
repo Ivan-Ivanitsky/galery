@@ -1,0 +1,10 @@
+.gallery__wrapper{
+    position: relative;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
