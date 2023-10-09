@@ -8,7 +8,7 @@ const Card = ({ data, setId }) => {
 
   return data.map((el) => (
     <Link
-      to={`/id:${el.id}`}
+      to={`/Card`}
       key={el.id}
       className="card"
       onClick={() => addId(el.id)}

@@ -8,12 +8,8 @@ import CardList from "./pages/CardList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  const getElem = JSON.parse(localStorage.getItem("cadrElem"));
   const [data, setData] = useState(db);
-  const [id, setId] = useState(getElem.id);
-  // useEffect(() => {
-  //   setData((data) => (data = db));
-  // }, [data]);
+  const [id, setId] = useState(data.id);
 
   return (
     <BrowserRouter>
@@ -22,8 +18,16 @@ function App() {
         <CardWrapper>
           <Routes>
             <Route path="/" element={<Card data={data} setId={setId} />} />
-            <Route path={`/id:${id}`} element={<CardList data={data[id]} />} />
-            {/* <Route path="*" element={<>{"HEllow"}</>} /> */}
+            <Route path={`/Card`} element={<CardList data={data[id]} />} />
+            <Route
+              path="*"
+              element={
+                <>
+                  {"Sorry page not found"}
+                  <a href="/">Назад</a>
+                </>
+              }
+            />
           </Routes>
         </CardWrapper>
       </div>

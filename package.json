@@ -1,7 +1,7 @@
 {
   "name": "photo",
   "version": "0.1.0",
-  "homepage": "https://github.com/Ivan-Ivanitsky/galery.git",
+  "homepage": "https://ivan-ivanitsky.github.io/galery/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

@@ -1,11 +1,11 @@
 import "./Header.css";
-
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
         <div className="header__wrapper">
           <div className="logo">
+            <div className="logo_img"></div>
             <img src="gallery.jpg" alt="logo" />
           </div>
           <p>
